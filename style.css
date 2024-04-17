@@ -76,19 +76,36 @@ body {
        column-gap: 5px;
 }
 #es-vichy.es-vichy .es-kv__disc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
   line-height: inherit;
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-size: 14.78px;
+  font-size: 16px;
   text-align: left;
   text-transform: uppercase;
-  max-width: 190px;
+  color: #fff;
 }
 #es-vichy.es-vichy .es-kv__disc span {
-  font-weight: 900;
+  font-weight: 700;
+}
+#es-vichy.es-vichy .es-kv__disc--red {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 3px 22px;
+  background: #e03e2f;
+  text-align: center;
 }
 #es-vichy.es-vichy .es-kv__photo {
   position: relative;
@@ -103,6 +120,11 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+#es-vichy.es-vichy .es-kv__img-packshot {
+  max-width: 105%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 #es-vichy.es-vichy .es-kv__title-img {
   max-width: 100%;
   display: block;
@@ -111,12 +133,16 @@ body {
   margin-left: -8px;
 }
 #es-vichy.es-vichy .es-kv__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background: url("images/photo.jpg") center/cover no-repeat;
   padding-top: 45px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   min-height: 420px;
+  padding-bottom: 30px;
 }
 #es-vichy.es-vichy .es-kv__title {
   margin: 0;
@@ -125,14 +151,48 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  padding: 32px 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 5px 24px;
+  padding-left: 12px;
   color: #fff;
   text-transform: uppercase;
-  font-size: 26px;
-  text-align: right;
+  font-size: 14px;
+  text-align: left;
   opacity: 0;
   animation: slideright 0.6s ease forwards;
   animation-delay: 0.9s;
+}
+#es-vichy.es-vichy .es-kv__title--large {
+  font-size: 35px;
+}
+#es-vichy.es-vichy .es-kv__title sup {
+  vertical-align: top;
+  font-size: 12px;
+}
+#es-vichy.es-vichy .es-kv__subtitle {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 5px 24px;
+  padding-left: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: left;
+  opacity: 0;
+  animation: slideright 0.6s ease forwards;
+  animation-delay: 0.9s;
+  line-height: 1.4;
+}
+#es-vichy.es-vichy .es-kv__subtitle sup {
+  vertical-align: top;
+  font-size: 12px;
 }
 #es-vichy.es-vichy .es-icons {
   background-color: #f4f4f4;
@@ -180,7 +240,7 @@ body {
   list-style: none;
 }
 #es-vichy.es-vichy .es-info__steps-item {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   transition: all 0.3s ease-in-out;
 }
 #es-vichy.es-vichy .es-info__steps-item:hover {
@@ -260,6 +320,22 @@ body {
   display: block;
   margin: 0 auto;
 }
+#es-vichy.es-vichy .es-dermatologits__desc {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 50px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+#es-vichy.es-vichy .es-dermatologits__content {
+  background-color: #112c5b;
+}
 #es-vichy.es-vichy .es-dermatologits__subtitle {
   margin: 0;
   padding: 0;
@@ -267,15 +343,14 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
   font-family: "Montserrat", sans-serif;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #f2f4f6;
+  color: #fff;
   text-align: center;
 }
 #es-vichy.es-vichy .es-dermatologits__subtitle sup {
@@ -477,7 +552,7 @@ body {
 }
 #es-vichy.es-vichy .es-cross__single {
   max-width: 275px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   padding: 0 8px;
   display: flex;
   flex-flow: column;
@@ -790,6 +865,7 @@ body {
   display: block;
   margin: 0 auto;
   width: auto;
+  min-height: 160px;
   margin-bottom: 20px;
 }
 #es-vichy.es-vichy .es-compare__single-title {
@@ -803,7 +879,7 @@ body {
   font-family: inherit;
   font-weight: inherit;
   margin-bottom: 20px;
-  min-height: 95px;
+  min-height: 110px;
   padding: 24px 14px;
   font-family: "Montserrat";
   font-size: 13px;
@@ -828,7 +904,7 @@ body {
   font-weight: inherit;
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -933,6 +1009,16 @@ body {
   }
 }
 @media screen and (min-width: 550px) {
+  #es-vichy.es-vichy .es-kv__title {
+    font-size: 19px;
+  }
+  #es-vichy.es-vichy .es-kv__subtitle {
+    font-size: 19px;
+  }
+  #es-vichy.es-vichy .es-dermatologits__content {
+    display: flex;
+    flex-direction: column;
+  }
   #es-vichy.es-vichy .es-dermatologits__wrapper {
     display: flex;
     justify-content: flex-start;
@@ -941,10 +1027,12 @@ body {
     min-height: 300px;
     background-size: cover;
   }
+  #es-vichy.es-vichy .es-dermatologits__content {
+    padding-left: 15%;
+  }
   #es-vichy.es-vichy .es-dermatologits__subtitle {
     margin-left: 10px;
     justify-content: flex-start;
-    padding-left: 50px;
     font-size: 30px;
     background: none;
   }
@@ -968,6 +1056,7 @@ body {
     justify-content: space-between;
     flex: 1;
     flex-basis: 50%;
+    margin-left: -1px;
   }
   #es-vichy.es-vichy .es-kv__photo {
     order: -1;
@@ -979,7 +1068,7 @@ body {
   }
   #es-vichy.es-vichy .es-info__wrapper {
     min-height: 382px;
-    background: #fff url(images/info-image.png) -70px -20px no-repeat;
+    background: #fff url(images/info-image.png) -49px -85px no-repeat;
     background-size: contain;
   }
   #es-vichy.es-vichy .es-info__text--1 {
@@ -1104,7 +1193,7 @@ body {
     min-width: 125px;
   }
   #es-vichy.es-vichy .es-compare__single-title {
-    min-height: 70px;
+    min-height: 93px;
     padding: 10px 14px;
   }
   #es-vichy.es-vichy .es-compare__single-title--square {
@@ -1118,7 +1207,7 @@ body {
 }
 @media screen and (min-width: 650px) {
   #es-vichy.es-vichy .es-info__wrapper {
-    background: #fff url(images/info-image.png) -52px -20px no-repeat;
+    background: #fff url(images/info-image.png) -9px -86px no-repeat;
     background-size: contain;
   }
   #es-vichy.es-vichy .es-info__text--2 {
@@ -1255,13 +1344,13 @@ body {
     justify-content: space-between;
   }
   #es-vichy.es-vichy .es-cross__single:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
   #es-vichy.es-vichy .es-cross__title {
     margin-bottom: 100px;
   }
   #es-vichy.es-vichy .es-cross__text {
-    min-height: 54px;
+    min-height: 75px;
   }
   #es-vichy.es-vichy .es-cross__img {
     max-width: 250px;
@@ -1271,7 +1360,7 @@ body {
     max-width: 274px;
   }
   #es-vichy.es-vichy .es-cross__img--3 {
-    max-width: 280px;
+    max-width: 290px;
     margin-right: 0;
   }
   #es-vichy.es-vichy .es-cross__packshot {
@@ -1331,6 +1420,13 @@ body {
     margin-top: -15px;
     z-index: 1;
   }
+  #es-vichy.es-vichy .es-kv__disc {
+    margin-top: -15px;
+    font-size: 18px;
+  }
+  #es-vichy.es-vichy .es-kv__disc span {
+    font-weight: 700;
+  }
   #es-vichy.es-vichy .es-ingr__img {
     max-width: 185px;
   }
@@ -1376,8 +1472,13 @@ body {
   #es-vichy.es-vichy .es-compare__single {
     min-width: 228px;
   }
+  #es-vichy.es-vichy .es-compare__single-image {
+    min-height: 180px;
+    max-width: 170px;
+  }
   #es-vichy.es-vichy .es-compare__single-title {
     font-size: 15px;
+    margin-bottom: 50px;
   }
 }
 @keyframes slidedown {
