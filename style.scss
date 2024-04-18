@@ -78,7 +78,7 @@ body {
       animation: slidedown 0.6s ease forwards;
     }
     &__claim {
-      margin-bottom: 32px;
+      margin-top: 30px;
       opacity: 0;
       animation: slidedown 0.6s ease forwards;
       animation-delay: 0.3s;
@@ -94,17 +94,27 @@ body {
       justify-content: center;
       column-gap: 5px;
     }
-    &__disc {
+    &__disc,
+    &__claim-text {
       display: flex;
       flex-direction: column;
       align-items: center;
       @include text;
+      font-family: 'Montserrat', sans-serif;
       font-size: 16px;
       text-align: left;
       text-transform: uppercase;
       color: #fff;
       & span {
         font-weight: 700;
+      }
+      & sup {
+        font-size: 16px;
+        vertical-align: super;
+      }
+
+      &--sup {
+        font-size: 12px !important;
       }
 
       &--red {
@@ -116,6 +126,10 @@ body {
         background: #e03e2f;
         text-align: center;
       }
+    }
+    &__claim-text {
+      margin-top: 20px;
+      text-align: center;
     }
     &__photo {
       position: relative;
@@ -328,7 +342,6 @@ body {
 
     &__desc {
       @include text;
-      // background-color: #f2f4f6;
       font-family: $secondary;
       padding-bottom: 50px;
       font-size: 20px;
@@ -349,7 +362,6 @@ body {
       column-gap: 10px;
       font-family: $secondary;
       color: #fff;
-      // background-color: #f2f4f6;
       text-align: center;
 
       & sup {
@@ -708,6 +720,7 @@ body {
         margin-top: -10px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 10px;
         max-height: 0;
         transition: max-height 0.5s ease-out;
         border-radius: 10px;
@@ -901,6 +914,7 @@ body {
       font-size: 10px;
       text-align: center;
       text-transform: uppercase;
+      min-height: 48px;
     }
 
     &__type,
@@ -935,7 +949,8 @@ body {
     &__consistency-subtitle {
       @include text;
       margin-top: -4px;
-      font-size: 13px;
+      font-size: 12px;
+      min-width: none;
       padding-top: 20px;
       padding-bottom: 20px;
       font-family: 'Montserrat';
@@ -1266,7 +1281,6 @@ body {
         margin: 0 auto;
         flex-wrap: wrap;
         justify-content: center;
-        // max-width: 600px;
         gap: 30px;
         margin-bottom: 40px;
       }
@@ -1323,7 +1337,6 @@ body {
       }
       &__image {
         &--desktop {
-          // max-width: 75%;
           display: block;
         }
       }
@@ -1439,10 +1452,6 @@ body {
         width: 50%;
         text-align: left;
       }
-
-      &__img--desktop {
-        // margin-top: -60px;
-      }
     }
   }
 
@@ -1522,10 +1531,6 @@ body {
       &__single-subtitle {
         font-size: 14px;
       }
-      &__single-image {
-        // width: 203px;
-        // height: 210px;
-      }
       &__effect-subtitle {
         min-height: 100px;
       }
@@ -1542,10 +1547,6 @@ body {
           max-width: 80%;
         }
       }
-      &__claim {
-        min-height: 120px;
-        margin-bottom: -30px;
-      }
       &__images {
         justify-content: flex-start;
         padding-bottom: 20px;
@@ -1554,11 +1555,13 @@ body {
         margin-top: -15px;
         z-index: 1;
       }
-      &__disc {
+      &__disc,
+      &__claim-text {
         margin-top: -15px;
-        font-size: 18px;
         & span {
-          font-weight: 700;
+          font-weight: 600;
+          font-size: 19px;
+          line-height: 1;
         }
       }
     }
@@ -1638,6 +1641,13 @@ body {
       &__single-title {
         font-size: 15px;
         margin-bottom: 50px;
+      }
+
+      &__type-subtitle,
+      &__problem-subtitle,
+      &__effect-subtitle,
+      &__consistency-subtitle {
+        font-size: 13px;
       }
     }
   }
