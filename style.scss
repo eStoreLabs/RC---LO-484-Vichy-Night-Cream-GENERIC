@@ -384,8 +384,9 @@ body {
 
     &__title {
       @include text;
+      font-family: 'Montserrat', sans-serif;
       margin-top: 50px;
-      font-size: 22px;
+      font-size: 25px;
       font-weight: 700;
       text-align: left;
       margin-bottom: 32px;
@@ -881,6 +882,10 @@ body {
       width: auto;
       min-height: 160px;
       margin-bottom: 20px;
+
+      &--4 {
+        margin-top: 21px;
+      }
     }
 
     &__single-title {
@@ -949,7 +954,7 @@ body {
     &__consistency-subtitle {
       @include text;
       margin-top: -4px;
-      font-size: 12px;
+      font-size: 11.5px;
       min-width: none;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -964,6 +969,10 @@ body {
     }
     &__consistency-subtitle {
       min-height: 80px;
+    }
+
+    &__problem-subtitle {
+      min-height: 90px;
     }
 
     &__inner {
