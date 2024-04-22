@@ -986,6 +986,15 @@ body {
         }
       }
     }
+
+    .es-info {
+      &__text {
+        &--4 {
+          margin-left: 10%;
+          margin-top: 16%;
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 400px) {
@@ -1001,9 +1010,6 @@ body {
         }
         &--3 {
           margin-left: 22%;
-        }
-        &--4 {
-          margin-left: 7%;
         }
       }
     }

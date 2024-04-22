@@ -984,6 +984,10 @@ body {
     top: -20%;
     right: 0%;
   }
+  #es-vichy.es-vichy .es-info__text--4 {
+    margin-left: 10%;
+    margin-top: 16%;
+  }
 }
 @media screen and (min-width: 400px) {
   #es-vichy.es-vichy .es-kv__content {
@@ -994,9 +998,6 @@ body {
   }
   #es-vichy.es-vichy .es-info__text--3 {
     margin-left: 22%;
-  }
-  #es-vichy.es-vichy .es-info__text--4 {
-    margin-left: 7%;
   }
   #es-vichy.es-vichy .es-ingr__container::before {
     top: -16%;
