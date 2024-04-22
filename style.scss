@@ -836,11 +836,6 @@ body {
         text-transform: none;
       }
     }
-    &__player {
-      &--desktop {
-        display: none;
-      }
-    }
     &__play-button {
       &--desktop {
         display: none;
@@ -1486,7 +1481,7 @@ body {
           max-width: 274px;
         }
         &--3 {
-          max-width: 290px;
+          max-width: 236px;
           margin-right: 0;
         }
       }
@@ -1619,7 +1614,7 @@ body {
       }
       &__single {
         &--middle {
-          margin-left: -55px;
+          margin-left: -15px;
         }
       }
       &__link {

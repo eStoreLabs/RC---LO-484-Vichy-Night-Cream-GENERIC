@@ -844,9 +844,6 @@ body {
 #es-vichy.es-vichy .es-video__additional-description strong {
   text-transform: none;
 }
-#es-vichy.es-vichy .es-video__player--desktop {
-  display: none;
-}
 #es-vichy.es-vichy .es-video__play-button--desktop {
   display: none;
 }
@@ -1382,7 +1379,7 @@ body {
     max-width: 274px;
   }
   #es-vichy.es-vichy .es-cross__img--3 {
-    max-width: 290px;
+    max-width: 236px;
     margin-right: 0;
   }
   #es-vichy.es-vichy .es-cross__packshot {
@@ -1473,7 +1470,7 @@ body {
     font-size: 200px;
   }
   #es-vichy.es-vichy .es-cross__single--middle {
-    margin-left: -55px;
+    margin-left: -15px;
   }
   #es-vichy.es-vichy .es-cross__link {
     padding-top: 15px;
